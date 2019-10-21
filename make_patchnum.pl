@@ -147,6 +147,7 @@ elsif ($git_patch_file = read_file(".git_patch") and $git_patch_file !~ /\A\$For
         $branch = $names[0] || $commit_id;
     }
 
+
     $describe = $branch || $commit_id;
     $extra_info = "git_commit_date='$commit_date'\n";
     $extra_info .= "git_snapshot_date='$commit_date'\n";
